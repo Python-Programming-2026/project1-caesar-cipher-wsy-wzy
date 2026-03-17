@@ -1,23 +1,34 @@
 团队：wsy&wzy
+
 团队成员：王松愉、王子逸
 
 《凯撒密码加密/解密工具》
+
 项目简介
+
     这是一个简单的凯撒密码的加密解密工具，主要用于对英文文本的加密和解密。特点包括含交互页面便于操作，方便明文与密文之间的转换。
+    
 功能特性
+
     核心功能一：可用于文本的加密，将普通文本转换为密文
     核心功能二：可用于文本的解密，将密文恢复为原文
     核心功能三：用于字母处理，可以实现大写字母（A-Z）和小写字母（a-z）的加密解密
     核心功能四：可使符号保留，对于非字母字符（空格、标点、数字等）可以保持不变
     核心功能五：能够实现循环操作，支持连续加密/解密，无需重启程序
     核心功能六：可进行输入验证，能够处理无效输入
+    
 快速开始
+
     环境要求
+    
         Python 3.6 或更高版本
         无需安装第三方库
+        
     运行程序
+    
         将代码保存为ceasar.py
         在终端运行 python ceasar.py
+        
     使用示例
         
         凯撒密码加密/解密工具
@@ -120,16 +131,21 @@
         感谢使用，再见！
 
     程序运行视频
-    <video src="https://github.com/Python-Programming-2026/project1-caesar-cipher-wsy-wzy/blob/main/%E8%A7%86%E9%A2%911.mp4" controls width="600">
+    
+    <video src=" https://github.com/Python-Programming-2026/project1-caesar-cipher-wsy-wzy/blob/main/%E8%A7%86%E9%A2%911.mp4 " controls width="600">
     </video>
 
 工作原理
+
     算法说明
+    
         凯撒密码的解决思路在于将字母表中的字母按照固定的位移量进行移动，从而实现对英文文本的解密和加密
         加密过程：每个字母向后移动shift个位置
         解密过程：每个字母向前移动shift个位置
         核心公式：密文=（明文+shift）mod 26
+        
     代码逻辑
+    
         for char in text:
         # 处理大写字母
         if char.isupper():
@@ -140,7 +156,9 @@
         # 非字母字符保持不变
         else:
             result += char
+            
 项目结构
+
     def caesar_cipher(text, shift, mode='encrypt'):
     """
     凯撒密码实现
@@ -169,6 +187,7 @@
     main()
 
 程序整体流程图
+
 ```mermaid
 graph TB
     subgraph Main[主程序 main]
@@ -196,6 +215,7 @@ graph TB
 ```
 
 输入处理流程图
+
 ```mermaid
 graph TD
     subgraph Input [输入处理函数 get_input_text]
@@ -253,9 +273,11 @@ API参考
 | `int()` | 将字符串或数字转换为整数 | [int()文档](https://docs.python.org/zh-cn/3/library/functions.html#int) |
 
 注意事项
+
     仅支持英文字母，对于数字，符号等都不能进行加密
     移位数量可以是任意整数，但必须为整数
     加密后明文的大小写仍保留
+    
 常见问题
 
     Q：是否可以处理长文本？
@@ -266,9 +288,11 @@ API参考
     
 
 所蕴含的知识点
+
     1.注释
     单行注释：# 注释内容
     多行注释/对代码整体解释："""注释内容"""
+    
     2.字符串
     isupper()：判断字符是否为大写字母
     islower()：判断字符是否为小写字母
@@ -276,18 +300,22 @@ API参考
     lower()：将字符串转换为小写
     for char in text:：遍历字符串中的每个字符
     result += char：使用 + 运算符拼接字符串
+    
     3.字符处理函数
     ord() 函数：返回字符的ASCII码（如ord('A') 返回 65）
     chr() 函数：将 ASCII码转换为对应的字符（如chr(65) 返回 'A'）
+    
     4.流程控制
     条件判断：if-elif-else 结构
     循环结构：while True无限循环、for循环遍历序列
     break：跳出循环
     continue：跳过本次循环
+    
     5.输入输出
     输入函数input()：接收用户输入，返回字符串
     输出函数print()：打印信息到控制台
     支持格式化输出：f-string 字符串格式化
+    
     6.文件操作
     打开文件
     open(file_path, 'r', encoding='utf-8')：只读模式
@@ -296,8 +324,10 @@ API参考
     read()：读取整个文件内容
     写入文件
     write()：写入内容到文件
+    
     7.数据结构
     元组：函数返回多个值时，隐含使用了元组（如return text, False, None #返回一个包含三个元素的元组）
+    
     8.模块化设计（去耦合）
     函数分离
     caesar_cipher()：核心加密解密逻辑
@@ -306,16 +336,21 @@ API参考
     get_input_text()：输入处理
     main()：主程序流程控制
     if __name__ == "__main__" 语句：确保模块被导入时不会自动执行主程序
+    
     9.算术运算
     取模运算%：(ord(char) - ord('A') + shift) % 26
 
 团队成员贡献
+
 王松愉
+
     编写凯撒密码核心逻辑（加密/解密函数）
     搭建readme.md基础框架（标题、目录、功能介绍）
     在readme.md中编写测试用例、画流程图
     补充注意事项（如输入要求、常见问题）
+    
 王子逸
+
     编写三种模式的交互页面
     加入可读取txt文本部分并编写函数
     录制代码运行视频
