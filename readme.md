@@ -120,7 +120,7 @@
         感谢使用，再见！
 
     程序运行视频
-    <video src="D:/凯撒密码使用展示.mp4" controls width="600">
+    <video src="https://github.com/Python-Programming-2026/project1-caesar-cipher-wsy-wzy/blob/main/%E8%A7%86%E9%A2%911.mp4" controls width="600">
     </video>
 
 工作原理
