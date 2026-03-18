@@ -132,8 +132,7 @@
 
     程序运行视频
     
-    <video src=" https://github.com/Python-Programming-2026/project1-caesar-cipher-wsy-wzy/blob/main/%E8%A7%86%E9%A2%911.mp4 " controls width="600">
-    </video>
+    ![Image](https://github.com/user-attachments/assets/1d05ce7a-558d-4603-a29b-ab975b3abf92)
 
 工作原理
 
