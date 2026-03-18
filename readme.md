@@ -132,7 +132,7 @@
 
     程序运行视频
     
-    ![Image](https://github.com/user-attachments/assets/1d05ce7a-558d-4603-a29b-ab975b3abf92)
+![Image](https://github.com/user-attachments/assets/37255764-3811-4ad8-b2ca-415ae7d3ec43)
 
 工作原理
 
